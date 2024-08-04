@@ -1,0 +1,17 @@
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\bin\Debug\net8.0\UniSystem.Plugins.deps.json
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\bin\Debug\net8.0\UniSystem.Plugins.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\bin\Debug\net8.0\UniSystem.Plugins.pdb
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\bin\Debug\net8.0\UniSystem.Core.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\bin\Debug\net8.0\UniSystem.UseCases.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\bin\Debug\net8.0\UniSystem.Core.pdb
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\bin\Debug\net8.0\UniSystem.UseCases.pdb
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.csproj.AssemblyReference.cache
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.GeneratedMSBuildEditorConfig.editorconfig
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.AssemblyInfoInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.AssemblyInfo.cs
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.csproj.CoreCompileInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSyste.7FA6A7C1.Up2Date
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\refint\UniSystem.Plugins.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.pdb
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\ref\UniSystem.Plugins.dll

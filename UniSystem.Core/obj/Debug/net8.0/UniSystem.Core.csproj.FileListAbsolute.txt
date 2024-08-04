@@ -1,0 +1,11 @@
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\bin\Debug\net8.0\UniSystem.Core.deps.json
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\bin\Debug\net8.0\UniSystem.Core.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\bin\Debug\net8.0\UniSystem.Core.pdb
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.AssemblyInfoInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.AssemblyInfo.cs
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.csproj.CoreCompileInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\refint\UniSystem.Core.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.pdb
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\ref\UniSystem.Core.dll
