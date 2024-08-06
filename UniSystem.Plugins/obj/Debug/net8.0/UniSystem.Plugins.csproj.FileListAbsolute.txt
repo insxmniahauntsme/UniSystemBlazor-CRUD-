@@ -15,3 +15,4 @@ E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plug
 E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\refint\UniSystem.Plugins.dll
 E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.pdb
 E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\ref\UniSystem.Plugins.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Plugins\obj\Debug\net8.0\UniSystem.Plugins.sourcelink.json

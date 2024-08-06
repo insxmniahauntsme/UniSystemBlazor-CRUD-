@@ -1,13 +1,14 @@
 ﻿using UniSystem.Core.PluginInterfaces;
 using UniSystem.Core.Entities;
 
-namespace UniSystem.Plugins
+namespace UniSystem.Plugins.Repositories
 {
     public class FacultyRepository : IFacultyRepository
     {
         private readonly IEnumerable<Faculty> faculties;
 
-        public FacultyRepository(DataContext context) {
+        public FacultyRepository(DataContext context)
+        {
 
             faculties = context.Faculties;
         }

@@ -13,3 +13,4 @@ E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.Use
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\refint\UniSystem.UseCases.dll
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.pdb
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\ref\UniSystem.UseCases.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.sourcelink.json

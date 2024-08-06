@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using UniSystem.UseCases.Configurations;
+using UniSystem.Plugins.Configurations;
 using UniSystem.Core.Entities;
 
 namespace UniSystem.Plugins
@@ -8,6 +8,8 @@ namespace UniSystem.Plugins
     {
         private readonly string _connectionString = "Server=localhost;Database=University;TrustServerCertificate=true;Trusted_Connection=true;";
         public DbSet<Faculty> Faculties { get; set; }
+        public DbSet<Group> Groups { get; set; }
+        public DbSet<Student> Students { get; set; }
 
         public DataContext() { }
 
@@ -27,6 +29,8 @@ namespace UniSystem.Plugins
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new FacultyConfig());
+            modelBuilder.ApplyConfiguration(new GroupConfig());
+            modelBuilder.ApplyConfiguration(new StudentConfig());
         }
     }
 }

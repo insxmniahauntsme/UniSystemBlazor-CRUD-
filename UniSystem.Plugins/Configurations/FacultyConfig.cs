@@ -1,9 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.SqlServer;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using UniSystem.Core.Entities;
 
-namespace UniSystem.UseCases.Configurations
+namespace UniSystem.Plugins.Configurations
 {
     public class FacultyConfig : IEntityTypeConfiguration<Faculty>
     {

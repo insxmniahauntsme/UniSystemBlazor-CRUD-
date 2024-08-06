@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using UniSystem.UseCases.Interfaces;
 using UniSystem.UseCases.TablesUseCases;
 using UniSystem.Core.PluginInterfaces;
+using UniSystem.Plugins.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,8 +15,14 @@ builder.Services.AddRazorComponents()
 builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer("Server=localhost;Database=University;TrustServerCertificate=true;Trusted_Connection=true;"));
 
-builder.Services.AddScoped<IGetFacultiesUseCase, GetFacultiesUseCase>();
-builder.Services.AddScoped<IFacultyRepository, FacultyRepository>();
+builder.Services.AddTransient<IGetFacultiesUseCase, GetFacultiesUseCase>();
+builder.Services.AddTransient<IFacultyRepository, FacultyRepository>();
+
+builder.Services.AddTransient<IGetGroupsUseCase, GetGroupsUseCase>();
+builder.Services.AddTransient<IGroupRepository, GroupRepository>();
+
+builder.Services.AddTransient<IGetStudentsUseCase, GetStudentsUseCase>();
+builder.Services.AddTransient<IStudentRepository, StudentRepository>();
 
 var app = builder.Build();
 

@@ -1,0 +1,79 @@
+﻿.page-header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-divider {
+    height: 4px;
+    width: auto;
+    background: #ffffff25;
+    margin: 15px 20px 0px 20px;
+    border-radius: 4px;
+}
+
+.sidebar{
+    background: #2E2A35 !important;
+}
+
+.table-topic {
+    font-size: 24px;
+}
+
+.add-button {
+    padding-bottom: 5px;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    background-color: #9f9fdf;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-button {
+    padding: 5px, 5px, 5px, 5px;
+    font-size: 20px;
+    background-color: #9f9fdf;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-button {
+    padding: 5px, 5px, 5px, 5px;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    background-color: #9f9fdf;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page {
+    background-color: #e6e6ff90;
+}
+
+table {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead{
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+tbody{
+    margin-left: 3px;
+}

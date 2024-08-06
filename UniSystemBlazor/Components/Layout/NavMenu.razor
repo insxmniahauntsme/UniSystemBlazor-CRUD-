@@ -1,26 +1,30 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">University System</a>
+﻿<div class="top-row ps-3 navbar navbar-dark" style="background-color: #2E2A35; padding-top: 10px; padding-bottom: 0px; padding-right: 0px">
+    <div class="container-fluid" style="padding-left: 8px">
+        <img src="university.png" style="height: 35px; width: 35px;"/>
+        <a class="navbar-brand" href="" style="font-weight: 650;">University System</a>
     </div>
 </div>
 
+<div class="sidebar-divider"/>
 <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
 
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
+<link href="~/css/tablePages.css?v1.0" />
+
+<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()" style="background-color: #2E2A35">
     <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="faculties" Match="NavLinkMatch.All">
+        <div class="nav-item px-3" style="font-size: 20px">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Faculties
             </NavLink>
         </div>
 
-        <div class="nav-item px-3">
+        <div class="nav-item px-3" style="font-size: 20px">
             <NavLink class="nav-link" href="groups">
                 <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Groups
             </NavLink>
         </div>
 
-        <div class="nav-item px-3">
+        <div class="nav-item px-3" style="font-size: 20px">
             <NavLink class="nav-link" href="students">
                 <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Students
             </NavLink>

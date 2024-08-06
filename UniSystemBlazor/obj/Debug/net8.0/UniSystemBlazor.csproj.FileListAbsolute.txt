@@ -73,3 +73,4 @@ E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\refint\UniSystem
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.pdb
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.genruntimeconfig.cache
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\ref\UniSystemBlazor.dll
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.sourcelink.json

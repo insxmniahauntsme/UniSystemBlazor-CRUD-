@@ -9,3 +9,4 @@ E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.dl
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\refint\UniSystem.Core.dll
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.pdb
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\ref\UniSystem.Core.dll
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.sourcelink.json
