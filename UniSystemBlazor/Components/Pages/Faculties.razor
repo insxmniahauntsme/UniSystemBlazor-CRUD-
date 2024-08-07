@@ -1,6 +1,9 @@
 ﻿@page "/"
 @rendermode InteractiveServer
+
 @inject IGetFacultiesUseCase GetFacultiesUseCase
+@inject IDeleteFacultyUseCase DeleteFacultyUseCase
+@inject NavigationManager Navigation
 
 <PageTitle>Faculties</PageTitle>
 
@@ -8,7 +11,7 @@
 
 <div class="page-header">
     <div class="table-topic">Faculties</div>
-    <button class="add-button">
+    <button class="add-button" @onclick="AddFaculty">
         +
     </button>
 </div>
@@ -31,7 +34,7 @@ else
                 <th></th>
             </tr>
         </thead>
-        <tbody style="margin-left: 3px;">
+        <tbody>
             @foreach (var faculty in faculties)
             {
                 <tr>
@@ -45,7 +48,8 @@ else
                             Edit
                         </button>
                         <button type="button"
-                                class="delete-button">
+                                class="delete-button"
+                                @onclick="() => DeleteFaculty(faculty)">
                             Delete
                         </button>
                     </td>
@@ -70,5 +74,16 @@ else
         {
             Console.WriteLine($"Error: {ex.Message}");
         }
+    }
+
+    private void AddFaculty()
+    {
+        Navigation.NavigateTo("/add-faculty");
+    }
+
+    private async Task DeleteFaculty(Faculty faculty)
+    {
+        await DeleteFacultyUseCase.ExecuteAsync(faculty);
+        faculties = await GetFacultiesUseCase.ExecuteAsync();
     }
 }

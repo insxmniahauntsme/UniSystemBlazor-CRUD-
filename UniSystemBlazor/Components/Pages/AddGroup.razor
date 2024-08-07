@@ -1,0 +1,68 @@
+﻿@page "/add-group"
+@using UniSystem.UseCases.TableActionsUseCases
+
+@inject IAddGroupUseCase AddGroupUseCase
+@inject NavigationManager Navigation
+
+<link rel="stylesheet" href="css/tablePages.css?v1.0" />
+<link rel="stylesheet" href="css/form.css?v1.0" />
+
+<div class="page-header">
+    <div class="table-topic">Add group</div>
+</div>
+
+<br/>
+
+<EditForm Model="group" FormName="groupForm" OnValidSubmit="Save">
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="groupName">Group Name</label>
+        <InputText
+            id="groupName"
+            @bind-Value='group.GroupName'
+            class="form-control">
+        </InputText>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="Faculty">Faculty</label>
+        <InputText 
+            id="Faculty"
+            @bind-Value='group.Faculty'
+            class="form-control">
+        </InputText>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="AoF">Amount of students</label>
+        <InputNumber 
+            id="AoF"
+            @bind-Value='group.AmountOfStudents'
+            class="form-control">
+        </InputNumber>
+    </div>
+
+    <div class="form-group">
+        <label for="AvgScore">Average Score</label>
+        <InputNumber 
+            id="AvgScore"
+            @bind-Value='group.GroupAverage'
+            class="form-control">
+        </InputNumber>
+    </div>
+
+    <br/>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+
+</EditForm>
+
+@code {
+    [SupplyParameterFromForm]
+    private Group group {get; set;} = new Group(); 
+
+    private async Task Save()
+    {
+        await AddGroupUseCase.ExecuteAsync(group);
+        Navigation.NavigateTo("/groups");
+    }
+}

@@ -3,7 +3,7 @@ using UniSystem.Core.Entities;
 using UniSystem.Core.PluginInterfaces;
 using UniSystem.UseCases.Interfaces;
 
-namespace UniSystem.UseCases.TablesUseCases
+namespace UniSystem.UseCases.GetUseCases
 {
     public class GetGroupsUseCase : IGetGroupsUseCase
     {

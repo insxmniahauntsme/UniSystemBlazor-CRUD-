@@ -1,0 +1,58 @@
+﻿@page "/add-faculty"
+@using UniSystem.UseCases.TableActionsUseCases
+
+@inject IAddFacultyUseCase AddFacultyUseCase
+@inject NavigationManager Navigation
+
+<link rel="stylesheet" href="css/tablePages.css?v1.0" />
+<link rel="stylesheet" href="css/form.css?v1.0" />
+
+<div class="page-header">
+    <div class="table-topic">Add faculty</div>
+</div>
+
+<br/>
+
+<EditForm Model="faculty" FormName="facultyForm" OnValidSubmit="Save">
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="Name">Faculty Name</label>
+        <InputText 
+            id="Name"
+            @bind-Value='faculty.FacultyName'
+            class="form-control"
+            style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        </InputText>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="Department">Department</label>
+        <InputText 
+            id="Department"
+            @bind-Value='faculty.Department'
+            class="form-control">
+        </InputText>
+    </div>
+
+    <div class="form-group">
+        <label for="Note">Note</label>
+        <InputText 
+            id="Note"
+            @bind-Value='faculty.Note'
+            class="form-control">
+        </InputText>
+    </div>
+    <br/>
+    <button type="submit" class="btn btn-primary">Save</button>
+
+</EditForm>
+
+@code {
+    [SupplyParameterFromForm]
+    private Faculty faculty {get; set;} = new Faculty(); 
+
+    private async Task Save()
+    {
+        await AddFacultyUseCase.ExecuteAsync(faculty);
+        Navigation.NavigateTo("/");
+    }
+}

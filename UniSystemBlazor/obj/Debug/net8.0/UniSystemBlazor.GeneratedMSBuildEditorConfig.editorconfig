@@ -22,6 +22,18 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/csharp/blazorProj/UniSystem/UniSystemBlazor/Components/Pages/AddFaculty.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRGYWN1bHR5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/csharp/blazorProj/UniSystem/UniSystemBlazor/Components/Pages/AddGroup.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRHcm91cC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/csharp/blazorProj/UniSystem/UniSystemBlazor/Components/Pages/AddStudent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBZGRTdHVkZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/csharp/blazorProj/UniSystem/UniSystemBlazor/Components/Pages/Faculties.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGYWN1bHRpZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

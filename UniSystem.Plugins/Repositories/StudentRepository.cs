@@ -5,17 +5,39 @@ namespace UniSystem.Plugins.Repositories
 {
     public class StudentRepository : IStudentRepository
     {
-        private readonly IEnumerable<Student> students;
+        private DataContext _context;
 
         public StudentRepository(DataContext context)
         {
 
-            students = context.Students;
+            _context = context;
+        }
+
+        public Task AddStudentAsync(Student student)
+        {
+            if (_context.Students.ToList().Any(s => s.Name.Equals(student.Name, StringComparison.OrdinalIgnoreCase)) || string.IsNullOrWhiteSpace(student.Name))
+                return Task.CompletedTask;
+
+            _context.Students.Add(student);
+            _context.SaveChanges();
+
+            return Task.CompletedTask;
+        }
+
+        public Task DeleteStudentAsync(Student student)
+        {
+            if (_context.Students.ToList().Any(s => s.Name.Equals(student.Name, StringComparison.OrdinalIgnoreCase)))
+            {
+                _context.Students.Remove(student);
+                _context.SaveChanges();
+            }
+
+            return Task.CompletedTask;
         }
 
         public async Task<IEnumerable<Student>> GetStudentsAsync()
         {
-            return await Task.FromResult(students);
+            return await Task.FromResult(_context.Students);
         }
     }
 }

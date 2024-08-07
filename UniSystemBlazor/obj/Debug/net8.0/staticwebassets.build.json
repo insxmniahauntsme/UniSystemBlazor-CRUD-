@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YxT24OyxRJDFKtjAZebKMvr3H+H1iZll6TUKSK5T/94=",
+  "Hash": "5fTyLvG553DeQX502esnjmcCvQzVM0zbBGyXjm745xY=",
   "Source": "UniSystemBlazor",
   "BasePath": "_content/UniSystemBlazor",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\form.css",
+      "SourceId": "UniSystemBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\",
+      "BasePath": "_content/UniSystemBlazor",
+      "RelativePath": "css/form.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\form.css"
     },
     {
       "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePages.css",

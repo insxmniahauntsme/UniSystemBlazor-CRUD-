@@ -1,15 +1,19 @@
 ﻿@page "/students"
+@rendermode InteractiveServer
+
+@attribute [StreamRendering]
 
 @inject IGetStudentsUseCase GetStudentsUseCase
+@inject NavigationManager Navigation
+@inject IDeleteStudentUseCase DeleteStudentUseCase
 
 <PageTitle>Students</PageTitle>
 
 <link rel="stylesheet" href="css/tablePages.css?v=1.0" />
 
-
 <div class="page-header">
     <div class="table-topic">Students</div>
-    <button class="add-button">
+    <button class="add-button" @onclick="AddStudent">
         +
     </button>
 </div>
@@ -50,7 +54,8 @@ else
                         </button>
                         <button
                             type="button"
-                            class="delete-button">
+                            class="delete-button"
+                            @onclick="() => DeleteStudent(student)">
                             Delete
                         </button>
                     </td>
@@ -75,5 +80,16 @@ else
         {
             Console.WriteLine($"Error: {ex.Message}");
         }
+    }
+
+    private void AddStudent()
+    {
+        Navigation.NavigateTo("/add-student");
+    }
+
+    private async Task DeleteStudent(Student student)
+    {
+        await DeleteStudentUseCase.ExecuteAsync(student);
+        students = await GetStudentsUseCase.ExecuteAsync();
     }
 }

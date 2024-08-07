@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniSystem.UseCases", "..\Un
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniSystem.Core", "..\UniSystem.Core\UniSystem.Core.csproj", "{FB532491-E3CB-4CDE-A4E8-E0F70B35E2E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniSystem.Plugins", "..\UniSystem.Plugins\UniSystem.Plugins.csproj", "{7AC001DE-2835-4DA2-B514-E3D1E11BC05C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UniSystem.Plugins", "..\UniSystem.Plugins\UniSystem.Plugins.csproj", "{7AC001DE-2835-4DA2-B514-E3D1E11BC05C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,9 +2,10 @@ using UniSystemBlazor.Components;
 using UniSystem.Plugins;
 using Microsoft.EntityFrameworkCore;
 using UniSystem.UseCases.Interfaces;
-using UniSystem.UseCases.TablesUseCases;
+using UniSystem.UseCases.GetUseCases;
 using UniSystem.Core.PluginInterfaces;
 using UniSystem.Plugins.Repositories;
+using UniSystem.UseCases.TableActionsUseCases;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,16 @@ builder.Services.AddTransient<IGroupRepository, GroupRepository>();
 
 builder.Services.AddTransient<IGetStudentsUseCase, GetStudentsUseCase>();
 builder.Services.AddTransient<IStudentRepository, StudentRepository>();
+
+builder.Services.AddTransient<IAddFacultyUseCase, AddFacultyUseCase>();
+builder.Services.AddTransient<IDeleteFacultyUseCase, DeleteFacultyUseCase>();
+builder.Services.AddTransient<IAddGroupUseCase, AddGroupUseCase>();
+builder.Services.AddTransient<IDeleteGroupUseCase, DeleteGroupUseCase>();
+builder.Services.AddTransient<IAddStudentUseCase, AddStudentUseCase>();
+builder.Services.AddTransient<IDeleteStudentUseCase, DeleteStudentUseCase>();
+
+
+
 
 var app = builder.Build();
 

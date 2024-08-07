@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
+      "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\form.css",
+      "PackagePath": "staticwebassets\\css\\form.css"
+    },
+    {
       "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePages.css",
       "PackagePath": "staticwebassets\\css\\tablePages.css"
     },

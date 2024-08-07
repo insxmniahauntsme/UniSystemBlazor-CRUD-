@@ -5,17 +5,39 @@ namespace UniSystem.Plugins.Repositories
 {
     public class GroupRepository : IGroupRepository
     {
-        private readonly IEnumerable<Group> groups;
+        private readonly DataContext _context;
 
         public GroupRepository(DataContext context)
         {
 
-            groups = context.Groups;
+            _context = context;
+        }
+
+        public Task AddGroupAsync(Group group)
+        {
+            if (_context.Groups.ToList().Any(g => g.GroupName.Equals(group.GroupName, StringComparison.OrdinalIgnoreCase)) || string.IsNullOrWhiteSpace(group.GroupName))
+                return Task.CompletedTask;
+
+            _context.Groups.Add(group);
+            _context.SaveChanges();
+
+            return Task.CompletedTask;
+        }
+
+        public Task DeleteGroupAsync(Group group)
+        {
+            if (_context.Groups.ToList().Any(g => g.GroupName.Equals(group.GroupName, StringComparison.OrdinalIgnoreCase)))
+            {
+                _context.Groups.Remove(group);
+                _context.SaveChanges();
+            }
+
+            return Task.CompletedTask;
         }
 
         public async Task<IEnumerable<Group>> GetGroupsAsync()
         {
-            return await Task.FromResult(groups);
+            return await Task.FromResult(_context.Groups);
         }
     }
 }
