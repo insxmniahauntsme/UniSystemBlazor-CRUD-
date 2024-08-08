@@ -4,16 +4,15 @@
 @inject IAddFacultyUseCase AddFacultyUseCase
 @inject NavigationManager Navigation
 
-<link rel="stylesheet" href="css/tablePages.css?v1.0" />
-<link rel="stylesheet" href="css/form.css?v1.0" />
+<link rel="stylesheet" href="css/addPage.css?v1.0" />
 
 <div class="page-header">
-    <div class="table-topic">Add faculty</div>
+    <div class="addpage-topic">Add faculty</div>
 </div>
 
 <br/>
 
-<EditForm Model="faculty" FormName="facultyForm" OnValidSubmit="Save">
+<EditForm Model="faculty" FormName="addForm" OnValidSubmit="Save">
     <div class="form-group" style="padding-bottom: 10px">
         <label for="Name">Faculty Name</label>
         <InputText 

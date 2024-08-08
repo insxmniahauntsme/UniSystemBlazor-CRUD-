@@ -35,6 +35,22 @@ namespace UniSystem.Plugins.Repositories
             return Task.CompletedTask;
         }
 
+        public Task EditStudentAsync(Student student)
+        {
+            if (_context.Students.ToList().Any(s => s.Name.Equals(student.Name, StringComparison.OrdinalIgnoreCase)))
+            {
+                _context.Students.Update(student);
+                _context.SaveChanges();
+            }
+
+            return Task.CompletedTask;
+        }
+
+        public async Task<Student> GetStudentByNameAsync(string name)
+        {
+            return await Task.FromResult(_context.Students.First(s => s.Name == name));
+        }
+
         public async Task<IEnumerable<Student>> GetStudentsAsync()
         {
             return await Task.FromResult(_context.Students);

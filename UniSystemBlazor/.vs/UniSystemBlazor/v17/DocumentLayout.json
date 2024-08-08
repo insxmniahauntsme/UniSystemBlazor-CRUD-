@@ -3,36 +3,46 @@
   "WorkspaceRootPath": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\components\\pages\\addgroup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:components\\pages\\addgroup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\wwwroot\\css\\tablepages.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:wwwroot\\css\\tablepages.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\components\\pages\\addfaculty.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:components\\pages\\addfaculty.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FB532491-E3CB-4CDE-A4E8-E0F70B35E2E5}|..\\UniSystem.Core\\UniSystem.Core.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystem.core\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\components\\pages\\addstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:components\\pages\\addstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\wwwroot\\css\\form.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:wwwroot\\css\\form.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{7AC001DE-2835-4DA2-B514-E3D1E11BC05C}|..\\UniSystem.Plugins\\UniSystem.Plugins.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystem.plugins\\repositories\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B97859A8-A6A4-4097-A307-1E4530E0627A}|..\\UniSystem.UseCases\\UniSystem.UseCases.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystem.usecases\\tableactionsusecases\\addstudentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\wwwroot\\css\\addpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:wwwroot\\css\\addpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B97859A8-A6A4-4097-A307-1E4530E0627A}|..\\UniSystem.UseCases\\UniSystem.UseCases.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystem.usecases\\interfaces\\iaddstudentusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\wwwroot\\css\\tablepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:wwwroot\\css\\tablepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7AC001DE-2835-4DA2-B514-E3D1E11BC05C}|..\\UniSystem.Plugins\\UniSystem.Plugins.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystem.plugins\\repositories\\facultyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\wwwroot\\css\\editpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:wwwroot\\css\\editpage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FB532491-E3CB-4CDE-A4E8-E0F70B35E2E5}|..\\UniSystem.Core\\UniSystem.Core.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystem.core\\plugininterfaces\\ifacultyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\components\\pages\\addfaculty.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:components\\pages\\addfaculty.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\components\\pages\\editstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:components\\pages\\editstudent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\components\\pages\\editgroup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:components\\pages\\editgroup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\components\\pages\\editfaculty.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:components\\pages\\editfaculty.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|e:\\csharp\\blazorproj\\unisystem\\unisystemblazor\\components\\pages\\addgroup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{434A9D2D-3A77-4F8F-ACB3-9728B376A85D}|UniSystemBlazor.csproj|solutionrelative:components\\pages\\addgroup.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,8 +51,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 263,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,119 +60,145 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "form.css",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\form.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\form.css",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\form.css",
-              "RelativeToolTip": "wwwroot\\css\\form.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-07T18:24:03.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "tablePages.css",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePages.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\tablePages.css",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePages.css",
-              "RelativeToolTip": "wwwroot\\css\\tablePages.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-07T18:21:35.04Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AddFaculty.razor",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddFaculty.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\AddFaculty.razor",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddFaculty.razor",
-              "RelativeToolTip": "Components\\Pages\\AddFaculty.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T17:53:21.613Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddStudent.razor",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddStudent.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\AddStudent.razor",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddStudent.razor",
-              "RelativeToolTip": "Components\\Pages\\AddStudent.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T17:53:16.591Z",
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.Plugins\\Repositories\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "..\\UniSystem.Plugins\\Repositories\\StudentRepository.cs",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.Plugins\\Repositories\\StudentRepository.cs",
+              "RelativeToolTip": "..\\UniSystem.Plugins\\Repositories\\StudentRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwAkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T18:00:13.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AddGroup.razor",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddGroup.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\AddGroup.razor",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddGroup.razor",
-              "RelativeToolTip": "Components\\Pages\\AddGroup.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T17:53:16.001Z",
+              "Title": "Student.cs",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.Core\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "..\\UniSystem.Core\\Entities\\Student.cs",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.Core\\Entities\\Student.cs",
+              "RelativeToolTip": "..\\UniSystem.Core\\Entities\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-08T17:58:40.924Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IFacultyRepository.cs",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.Core\\PluginInterfaces\\IFacultyRepository.cs",
-              "RelativeDocumentMoniker": "..\\UniSystem.Core\\PluginInterfaces\\IFacultyRepository.cs",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.Core\\PluginInterfaces\\IFacultyRepository.cs",
-              "RelativeToolTip": "..\\UniSystem.Core\\PluginInterfaces\\IFacultyRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T17:52:52.428Z",
+              "DocumentIndex": 4,
+              "Title": "tablePage.css",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePage.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\tablePage.css",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePage.css",
+              "RelativeToolTip": "wwwroot\\css\\tablePage.css",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAACIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-08T17:46:10.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FacultyRepository.cs",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.Plugins\\Repositories\\FacultyRepository.cs",
-              "RelativeDocumentMoniker": "..\\UniSystem.Plugins\\Repositories\\FacultyRepository.cs",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.Plugins\\Repositories\\FacultyRepository.cs",
-              "RelativeToolTip": "..\\UniSystem.Plugins\\Repositories\\FacultyRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T17:52:50.218Z",
+              "DocumentIndex": 3,
+              "Title": "addPage.css",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\addPage.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\addPage.css",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\addPage.css",
+              "RelativeToolTip": "wwwroot\\css\\addPage.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-08T17:32:06.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AddStudentUseCase.cs",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.UseCases\\TableActionsUseCases\\AddStudentUseCase.cs",
-              "RelativeDocumentMoniker": "..\\UniSystem.UseCases\\TableActionsUseCases\\AddStudentUseCase.cs",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.UseCases\\TableActionsUseCases\\AddStudentUseCase.cs",
-              "RelativeToolTip": "..\\UniSystem.UseCases\\TableActionsUseCases\\AddStudentUseCase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T17:52:26.044Z",
+              "Title": "editPage.css",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\editPage.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\editPage.css",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\editPage.css",
+              "RelativeToolTip": "wwwroot\\css\\editPage.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-08-08T16:55:46.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IAddStudentUseCase.cs",
-              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.UseCases\\Interfaces\\IAddStudentUseCase.cs",
-              "RelativeDocumentMoniker": "..\\UniSystem.UseCases\\Interfaces\\IAddStudentUseCase.cs",
-              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystem.UseCases\\Interfaces\\IAddStudentUseCase.cs",
-              "RelativeToolTip": "..\\UniSystem.UseCases\\Interfaces\\IAddStudentUseCase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T17:52:11.631Z",
+              "Title": "AddFaculty.razor",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddFaculty.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\AddFaculty.razor",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddFaculty.razor",
+              "RelativeToolTip": "Components\\Pages\\AddFaculty.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T17:33:40.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddStudent.razor",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddStudent.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\AddStudent.razor",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddStudent.razor",
+              "RelativeToolTip": "Components\\Pages\\AddStudent.razor",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADYAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T17:33:41.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AddGroup.razor",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddGroup.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\AddGroup.razor",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\AddGroup.razor",
+              "RelativeToolTip": "Components\\Pages\\AddGroup.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T17:33:40.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EditFaculty.razor",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\EditFaculty.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\EditFaculty.razor",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\EditFaculty.razor",
+              "RelativeToolTip": "Components\\Pages\\EditFaculty.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T16:52:36.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditStudent.razor",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\EditStudent.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\EditStudent.razor",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\EditStudent.razor",
+              "RelativeToolTip": "Components\\Pages\\EditStudent.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T16:35:43.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EditGroup.razor",
+              "DocumentMoniker": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\EditGroup.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\EditGroup.razor",
+              "ToolTip": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\Components\\Pages\\EditGroup.razor",
+              "RelativeToolTip": "Components\\Pages\\EditGroup.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-08T16:35:48.796Z",
               "EditorCaption": ""
             }
           ]

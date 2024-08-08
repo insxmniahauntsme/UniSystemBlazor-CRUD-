@@ -17,23 +17,26 @@ builder.Services.AddDbContext<DataContext>(options =>
     options.UseSqlServer("Server=localhost;Database=University;TrustServerCertificate=true;Trusted_Connection=true;"));
 
 builder.Services.AddTransient<IGetFacultiesUseCase, GetFacultiesUseCase>();
+builder.Services.AddTransient<IGetFacultyByIdUseCase, GetFacultyByIdUseCase>();
 builder.Services.AddTransient<IFacultyRepository, FacultyRepository>();
 
 builder.Services.AddTransient<IGetGroupsUseCase, GetGroupsUseCase>();
+builder.Services.AddTransient<IGetGroupByIdUseCase, GetGroupByIdUseCase>();
 builder.Services.AddTransient<IGroupRepository, GroupRepository>();
 
 builder.Services.AddTransient<IGetStudentsUseCase, GetStudentsUseCase>();
+builder.Services.AddTransient<IGetStudentByNameUseCase, GetStudentByNameUseCase>();
 builder.Services.AddTransient<IStudentRepository, StudentRepository>();
 
 builder.Services.AddTransient<IAddFacultyUseCase, AddFacultyUseCase>();
 builder.Services.AddTransient<IDeleteFacultyUseCase, DeleteFacultyUseCase>();
+builder.Services.AddTransient<IEditFacultyUseCase, EditFacultyUseCase>();
 builder.Services.AddTransient<IAddGroupUseCase, AddGroupUseCase>();
 builder.Services.AddTransient<IDeleteGroupUseCase, DeleteGroupUseCase>();
+builder.Services.AddTransient<IEditGroupUseCase, EditGroupUseCase>();
 builder.Services.AddTransient<IAddStudentUseCase, AddStudentUseCase>();
 builder.Services.AddTransient<IDeleteStudentUseCase, DeleteStudentUseCase>();
-
-
-
+builder.Services.AddTransient<IEditStudentUseCase, EditStudentUseCase>();
 
 var app = builder.Build();
 

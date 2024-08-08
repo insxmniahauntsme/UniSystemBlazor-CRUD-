@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UniSystem.Plugins")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd908f78c33e695eef873f9fefb34f835c7252df")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b3c76b946eafcbe921a3665b2e60c643e920199")]
 [assembly: System.Reflection.AssemblyProductAttribute("UniSystem.Plugins")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UniSystem.Plugins")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

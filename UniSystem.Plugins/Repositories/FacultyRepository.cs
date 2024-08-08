@@ -36,6 +36,20 @@ namespace UniSystem.Plugins.Repositories
 
         }
 
+        public Task EditFacultyAsync(Faculty faculty)
+        {
+            if (_context.Faculties.ToList().Any(f => f.FacultyName.Equals(faculty.FacultyName, StringComparison.OrdinalIgnoreCase)) || string.IsNullOrWhiteSpace(faculty.FacultyName))
+            {
+                _context.Faculties.Update(faculty);
+                _context.SaveChanges();
+            }
+
+            return Task.CompletedTask;
+        }
+        public async Task<Faculty> GetFacultyByIdAsync(int id)
+        {
+            return await Task.FromResult(_context.Faculties.First(f => f.FacultyId == id));
+        }
         public async Task<IEnumerable<Faculty>> GetFacultiesAsync()
         {
             return await Task.FromResult(_context.Faculties);

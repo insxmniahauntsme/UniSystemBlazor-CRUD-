@@ -35,6 +35,22 @@ namespace UniSystem.Plugins.Repositories
             return Task.CompletedTask;
         }
 
+        public Task EditGroupAsync(Group group)
+        {
+            if (_context.Groups.ToList().Any(g => g.GroupName.Equals(group.GroupName, StringComparison.OrdinalIgnoreCase)))
+            {
+                _context.Groups.Update(group);
+                _context.SaveChanges();
+            }
+
+            return Task.CompletedTask;
+        }
+
+        public async Task<Group> GetGroupByIdAsync(int Id)
+        {
+            return await Task.FromResult(_context.Groups.First(g => g.GroupId == Id));
+        }
+
         public async Task<IEnumerable<Group>> GetGroupsAsync()
         {
             return await Task.FromResult(_context.Groups);

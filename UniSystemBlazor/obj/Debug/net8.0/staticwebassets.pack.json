@@ -13,16 +13,20 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\addPage.css",
+      "PackagePath": "staticwebassets\\css\\addPage.css"
+    },
+    {
       "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\form.css",
-      "PackagePath": "staticwebassets\\css\\form.css"
+      "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\editPage.css",
+      "PackagePath": "staticwebassets\\css\\editPage.css"
     },
     {
-      "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePages.css",
-      "PackagePath": "staticwebassets\\css\\tablePages.css"
+      "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePage.css",
+      "PackagePath": "staticwebassets\\css\\tablePage.css"
     },
     {
       "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\favicon.png",

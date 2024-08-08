@@ -8,9 +8,9 @@ E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.Use
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.AssemblyInfoInputs.cache
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.AssemblyInfo.cs
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.csproj.CoreCompileInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.sourcelink.json
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSyste.6D60AF93.Up2Date
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.dll
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\refint\UniSystem.UseCases.dll
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.pdb
 E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\ref\UniSystem.UseCases.dll
-E:\csharp\blazorProj\UniSystem\UniSystem.UseCases\obj\Debug\net8.0\UniSystem.UseCases.sourcelink.json

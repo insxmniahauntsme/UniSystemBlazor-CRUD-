@@ -9,7 +9,7 @@
 
 <PageTitle>Students</PageTitle>
 
-<link rel="stylesheet" href="css/tablePages.css?v=1.0" />
+<link rel="stylesheet" href="css/tablePage.css?v=1.0" />
 
 <div class="page-header">
     <div class="table-topic">Students</div>
@@ -49,7 +49,8 @@ else
                     <td>
                         <button 
                             type="button" 
-                            class="edit-button">
+                            class="edit-button"
+                            @onclick="() => EditStudent(student.Name)">
                             Edit
                         </button>
                         <button
@@ -85,6 +86,11 @@ else
     private void AddStudent()
     {
         Navigation.NavigateTo("/add-student");
+    }
+
+    private void EditStudent(string name)
+    {
+        Navigation.NavigateTo($"/edit-student/{name}");
     }
 
     private async Task DeleteStudent(Student student)

@@ -5,8 +5,8 @@ E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.Ge
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.AssemblyInfoInputs.cache
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.AssemblyInfo.cs
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.csproj.CoreCompileInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.sourcelink.json
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.dll
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\refint\UniSystem.Core.dll
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.pdb
 E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\ref\UniSystem.Core.dll
-E:\csharp\blazorProj\UniSystem\UniSystem.Core\obj\Debug\net8.0\UniSystem.Core.sourcelink.json

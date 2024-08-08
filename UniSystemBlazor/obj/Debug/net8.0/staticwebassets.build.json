@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5fTyLvG553DeQX502esnjmcCvQzVM0zbBGyXjm745xY=",
+  "Hash": "YFJYeYrpIfE6EmERe2RoeftvO5f/Nm0WOJD8mHiiUCA=",
   "Source": "UniSystemBlazor",
   "BasePath": "_content/UniSystemBlazor",
   "Mode": "Default",
@@ -93,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\addPage.css",
+      "SourceId": "UniSystemBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\",
+      "BasePath": "_content/UniSystemBlazor",
+      "RelativePath": "css/addPage.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\addPage.css"
+    },
+    {
       "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\app.css",
       "SourceId": "UniSystemBlazor",
       "SourceType": "Discovered",
@@ -112,12 +131,12 @@
       "OriginalItemSpec": "wwwroot\\css\\app.css"
     },
     {
-      "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\form.css",
+      "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\editPage.css",
       "SourceId": "UniSystemBlazor",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\",
       "BasePath": "_content/UniSystemBlazor",
-      "RelativePath": "css/form.css",
+      "RelativePath": "css/editPage.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -128,15 +147,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\form.css"
+      "OriginalItemSpec": "wwwroot\\css\\editPage.css"
     },
     {
-      "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePages.css",
+      "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePage.css",
       "SourceId": "UniSystemBlazor",
       "SourceType": "Discovered",
       "ContentRoot": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\",
       "BasePath": "_content/UniSystemBlazor",
-      "RelativePath": "css/tablePages.css",
+      "RelativePath": "css/tablePage.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -147,7 +166,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\tablePages.css"
+      "OriginalItemSpec": "wwwroot\\css\\tablePage.css"
     },
     {
       "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\favicon.png",

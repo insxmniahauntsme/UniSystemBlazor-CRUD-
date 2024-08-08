@@ -9,7 +9,7 @@
 
 <PageTitle>Groups</PageTitle>
 
-<link rel="stylesheet" href="css/tablePages.css?v=1.0" />
+<link rel="stylesheet" href="css/tablePage.css?v=1.0" />
 
 <div class="page-header">
     <div class="table-topic">Groups</div>
@@ -48,7 +48,8 @@ else
                     <td>@group.GroupAverage</td>
                     <td>
                         <button type="button"
-                                class="edit-button">
+                                class="edit-button"
+                                @onclick="() => EditGroup(group.GroupId)">
                             Edit
                         </button>
                         <button type="button"
@@ -84,6 +85,11 @@ else
     private void AddGroup()
     {
         Navigation.NavigateTo("/add-group");
+    }
+
+    private void EditGroup(int Id)
+    {
+        Navigation.NavigateTo($"/edit-group/{Id}");
     }
 
     private async Task DeleteGroup(Group group)

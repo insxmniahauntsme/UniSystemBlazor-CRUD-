@@ -1,0 +1,35 @@
+﻿.form-control {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.addpage-topic {
+    font-size: 24px;
+}
+
+.sidebar-divider {
+    height: 3px;
+    width: auto;
+    background: #d9d9f2;
+    margin: 15px 20px 0px 20px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    background: #2E2A35 !important;
+}
+
+.page {
+    background-color: #e6e6ff90;
+}
+
+.page-header {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

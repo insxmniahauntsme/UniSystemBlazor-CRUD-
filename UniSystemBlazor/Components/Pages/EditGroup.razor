@@ -1,0 +1,74 @@
+﻿@page "/edit-group/{groupId:int}"
+
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+@inject IEditGroupUseCase EditGroupUseCase
+@inject IGetGroupByIdUseCase GetGroupByIdUseCase
+@inject NavigationManager Navigation
+
+<link rel="stylesheet" href="css/editPage.css?v1.0" />
+
+<div class="page-header">
+    <div class="editpage-topic">Edit group</div>
+</div>
+
+<br />
+
+<EditForm Model="group" FormName="editForm" OnValidSubmit="Save">
+
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="Name">Group name</label>
+        <InputText id="Name"
+                   @bind-Value='group.GroupName'
+                   class="form-control">
+        </InputText>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="Faculty">Faculty</label>
+        <InputText id="Faculty"
+                   @bind-Value='group.Faculty'
+                   class="form-control">
+        </InputText>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="AoF">Amount of students</label>
+        <InputNumber id="Aof"
+                   @bind-Value='group.AmountOfStudents'
+                   class="form-control">
+        </InputNumber>
+    </div>
+
+    <div class="form-group">
+        <label for="AvgScore">Average score</label>
+        <InputNumber id="AvgScore"
+                     @bind-Value='group.GroupAverage'
+                     class="form-control">
+        </InputNumber>
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int GroupId { get; set; }
+
+    private Group group;
+
+    private async Task Save()
+    {
+        await EditGroupUseCase.ExecuteAsync(group);
+        Navigation.NavigateTo("/groups");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        group = await GetGroupByIdUseCase.ExecuteAsync(GroupId);
+    }
+
+}

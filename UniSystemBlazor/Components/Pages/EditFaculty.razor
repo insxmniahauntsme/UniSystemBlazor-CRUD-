@@ -1,0 +1,64 @@
+﻿@page "/edit-faculty/{facultyId:int}"
+
+@rendermode InteractiveServer
+@attribute [StreamRendering]
+
+@inject IEditFacultyUseCase EditFacultyUseCase
+@inject IGetFacultyByIdUseCase GetFacultyByIdUseCase
+@inject NavigationManager Navigation
+
+<link rel="stylesheet" href="css/editPage.css?v1.0" />
+
+<div class="page-header">
+    <div class="editpage-topic">Edit faculty</div>
+</div>
+
+<br />
+
+<EditForm Model="faculty" FormName="editForm" OnValidSubmit="Save">
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="Name">Faculty name</label>
+        <InputText id="Name"
+                   @bind-Value='faculty.FacultyName'
+                   class="form-control"
+                   style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        </InputText>
+    </div>
+
+    <div class="form-group" style="padding-bottom: 10px">
+        <label for="Department">Department</label>
+        <InputText id="Department"
+                   @bind-Value='faculty.Department'
+                   class="form-control">
+        </InputText>
+    </div>
+
+    <div class="form-group">
+        <label for="Note">Note</label>
+        <InputText id="Note"
+                   @bind-Value='faculty.Note'
+                   class="form-control">
+        </InputText>
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Save</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int FacultyId { get; set; }
+
+    private Faculty faculty;
+
+    private async Task Save()
+    {
+        await EditFacultyUseCase.ExecuteAsync(faculty);
+        Navigation.NavigateTo("/");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        faculty = await GetFacultyByIdUseCase.ExecuteAsync(FacultyId);
+    }
+
+}

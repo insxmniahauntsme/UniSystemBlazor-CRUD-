@@ -6,6 +6,8 @@ namespace UniSystem.Core.PluginInterfaces
     {
         Task AddGroupAsync(Group group);
         Task DeleteGroupAsync(Group group);
+        Task EditGroupAsync(Group group);
         Task<IEnumerable<Group>> GetGroupsAsync();
+        Task<Group> GetGroupByIdAsync(int Id);
     }
 }
