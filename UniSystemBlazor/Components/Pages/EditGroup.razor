@@ -51,14 +51,17 @@
 
     <br />
 
-    <button type="submit" class="btn btn-primary">Save</button>
+    <div style="align-items: center">
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-primary" @onclick='() => Navigation.NavigateTo("/groups")'>Cancel</button>
+    </div>
 </EditForm>
 
 @code {
     [Parameter]
     public int GroupId { get; set; }
 
-    private Group group;
+    private UniSystem.Core.Entities.Group group = null!;
 
     private async Task Save()
     {

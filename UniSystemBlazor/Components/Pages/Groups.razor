@@ -68,7 +68,7 @@ else
 
 
 @code {
-    private IEnumerable<Group>? groups;
+    private IEnumerable<UniSystem.Core.Entities.Group>? groups;
 
     protected override async Task OnInitializedAsync()
     {
@@ -92,7 +92,7 @@ else
         Navigation.NavigateTo($"/edit-group/{Id}");
     }
 
-    private async Task DeleteGroup(Group group)
+    private async Task DeleteGroup(UniSystem.Core.Entities.Group group)
     {
         await DeleteGroupUseCase.ExecuteAsync(group);
         groups = await GetGroupsUseCase.ExecuteAsync();

@@ -1,0 +1,55 @@
+﻿@page "/groups-chart"
+@using System.Globalization
+@using Radzen.Blazor
+@using Radzen
+
+
+@inject IGetGroupsUseCase GetGroupsUseCase
+@rendermode InteractiveServer
+
+<RadzenStack class="rz-p-0 rz-p-md-6 rz-p-lg-12">
+    <RadzenCard Variant="Variant.Outlined" >
+        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Wrap="FlexWrap.Wrap" Style="padding-left: 70px">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
+                <RadzenCheckBox @bind-Value="@smooth" Name="smooth" />
+                <RadzenLabel Text="Smooth" />
+            </RadzenStack>
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
+                <RadzenCheckBox @bind-Value="@showDataLabels" Name="dataLabels" />
+                <RadzenLabel Text="Show Data Labels" />
+            </RadzenStack>
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Gap="0.5rem">
+                <RadzenCheckBox @bind-Value="@showMarkers" Name="markers" />
+                <RadzenLabel Text="Show Markers" />
+            </RadzenStack>
+        </RadzenStack>
+
+        <RadzenChart>
+            <RadzenLineSeries Smooth="@smooth" Data="@groups" CategoryProperty="GroupName" ValueProperty="GroupAverage">
+                <RadzenMarkers Visible="@showMarkers" MarkerType="MarkerType.Square" />
+                <RadzenSeriesDataLabels Visible="@showDataLabels" />
+                <RadzenLegend Visible="false"/>
+            </RadzenLineSeries>
+            <RadzenCategoryAxis Padding="20" />
+            <RadzenValueAxis>
+                <RadzenGridLines Visible="true" />
+                <RadzenAxisTitle Text="Average score" />
+            </RadzenValueAxis>
+        </RadzenChart>
+    </RadzenCard>
+</RadzenStack>
+
+@code {
+    bool smooth = true;
+    bool showDataLabels = false;
+    bool showMarkers = true;
+
+    IEnumerable<UniSystem.Core.Entities.Group> groups = null!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        groups = await GetGroupsUseCase.ExecuteAsync();
+    }
+
+   
+}

@@ -1,6 +1,10 @@
 ﻿@page "/"
 @rendermode InteractiveServer
+@using Radzen.Blazor
+@using Radzen
+@using UniSystemBlazor.Components.Charts
 
+@inject DialogService dialogService
 @inject IGetFacultiesUseCase GetFacultiesUseCase
 @inject IDeleteFacultyUseCase DeleteFacultyUseCase
 @inject NavigationManager Navigation
@@ -53,6 +57,11 @@ else
                                 @onclick="() => DeleteFaculty(faculty)">
                             Delete
                         </button>
+                        <button type="Show chart"
+                                class="chart-button"
+                                @onclick="ShowChart">
+                            Chart       
+                        </button>
                     </td>
                 </tr>
                 
@@ -85,6 +94,16 @@ else
     private void EditFaculty(int Id)
     {
         Navigation.NavigateTo($"/edit-faculty/{Id}");
+    }
+
+    private async Task ShowChart()
+    {
+        await dialogService.OpenAsync<GroupsChart>("Groups chart", new Dictionary<string, object>(), new DialogOptions()
+        {
+            Height = "600px",
+            Width = "1100px"
+        });
+
     }
 
     private async Task DeleteFaculty(Faculty faculty)

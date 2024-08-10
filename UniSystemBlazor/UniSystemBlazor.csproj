@@ -12,4 +12,8 @@
     <ProjectReference Include="..\UniSystem.UseCases\UniSystem.UseCases.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Radzen.Blazor" Version="5.0.8" />
+  </ItemGroup>
+
 </Project>

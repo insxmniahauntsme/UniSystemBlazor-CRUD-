@@ -1,3 +1,10 @@
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.csproj.AssemblyReference.cache
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.GeneratedMSBuildEditorConfig.editorconfig
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.AssemblyInfoInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.AssemblyInfo.cs
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.csproj.CoreCompileInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.MvcApplicationPartsAssemblyInfo.cache
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.sourcelink.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\appsettings.Development.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\appsettings.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystemBlazor.staticwebassets.runtime.json
@@ -24,9 +31,11 @@ E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\Microsoft.Identi
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\Radzen.Blazor.dll
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\System.Drawing.Common.dll
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\System.Memory.Data.dll
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\System.Runtime.Caching.dll
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
@@ -50,13 +59,6 @@ E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystem.UseCas
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystem.Core.pdb
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystem.Plugins.pdb
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystem.UseCases.pdb
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.csproj.AssemblyReference.cache
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.GeneratedMSBuildEditorConfig.editorconfig
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.AssemblyInfoInputs.cache
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.AssemblyInfo.cs
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.csproj.CoreCompileInputs.cache
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.MvcApplicationPartsAssemblyInfo.cache
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.sourcelink.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\staticwebassets.build.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\staticwebassets.development.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\staticwebassets\msbuild.UniSystemBlazor.Microsoft.AspNetCore.StaticWebAssets.props
