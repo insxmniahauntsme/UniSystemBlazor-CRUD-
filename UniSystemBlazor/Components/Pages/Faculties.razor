@@ -8,6 +8,7 @@
 @inject IGetFacultiesUseCase GetFacultiesUseCase
 @inject IDeleteFacultyUseCase DeleteFacultyUseCase
 @inject NavigationManager Navigation
+@inject NotificationService NotificationService
 
 <PageTitle>Faculties</PageTitle>
 
@@ -54,7 +55,7 @@ else
                         </button>
                         <button type="button"
                                 class="delete-button"
-                                @onclick="() => DeleteFaculty(faculty)">
+                                @onclick="() => ConfirmDelete(faculty)">
                             Delete
                         </button>
                         <button type="Show chart"
@@ -106,9 +107,27 @@ else
 
     }
 
+    private async Task ConfirmDelete(Faculty faculty)
+    {
+        bool? result = await dialogService.Confirm("This action will delete the faculty and may also delete related elements from other tables. Do you want to proceed?", "Delete faculty?", new ConfirmOptions { OkButtonText = "Yes", CancelButtonText = "No" });
+
+        if (result == true)
+        {
+            await DeleteFaculty(faculty);
+        }
+    }
+
     private async Task DeleteFaculty(Faculty faculty)
     {
-        await DeleteFacultyUseCase.ExecuteAsync(faculty);
-        faculties = await GetFacultiesUseCase.ExecuteAsync();
+        try
+        {
+            await DeleteFacultyUseCase.ExecuteAsync(faculty);
+            faculties = await GetFacultiesUseCase.ExecuteAsync();
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Faculty was successfully deleted", Duration = 4000 });
+        }   
+        catch(Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = "This faculty doesn't exist", Duration = 4000 });
+        }
     }
 }

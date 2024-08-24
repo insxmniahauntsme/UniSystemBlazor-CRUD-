@@ -6,7 +6,7 @@ namespace UniSystem.Plugins
 {
     public class DataContext : DbContext
     {
-        private readonly string _connectionString = "Server=localhost;Database=University;TrustServerCertificate=true;Trusted_Connection=true;";
+        private readonly string _connectionString = "Server=localhost;Database=University;TrustServerCertificate=true;Trusted_Connection=true;MultipleActiveResultSets=true;";
         public DbSet<Faculty> Faculties { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Student> Students { get; set; }

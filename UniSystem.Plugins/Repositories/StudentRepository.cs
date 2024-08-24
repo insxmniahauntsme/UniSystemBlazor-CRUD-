@@ -46,9 +46,9 @@ namespace UniSystem.Plugins.Repositories
             return Task.CompletedTask;
         }
 
-        public async Task<Student> GetStudentByNameAsync(string name)
+        public async Task<Student> GetStudentByIdAsync(int id)
         {
-            return await Task.FromResult(_context.Students.First(s => s.Name == name));
+            return await Task.FromResult(_context.Students.First(s => s.StudentId == id));
         }
 
         public async Task<IEnumerable<Student>> GetStudentsAsync()

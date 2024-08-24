@@ -1,22 +1,21 @@
-﻿using Microsoft.EntityFrameworkCore;
-using UniSystem.Core.Entities;
+﻿using UniSystem.Core.Entities;
 using UniSystem.Core.PluginInterfaces;
+using UniSystem.UseCases.Interfaces;
 
 namespace UniSystem.UseCases.TableActionsUseCases
 {
-    public class AddGroupUseCase : IAddGroupUseCase
+    public class UpdateGroupsTableUseCase : IUpdateGroupsTableUseCase
     {
         private IGroupRepository _groupRepository;
 
-        public AddGroupUseCase(IGroupRepository groupRepository)
+        public UpdateGroupsTableUseCase(IGroupRepository groupRepository)
         {
             _groupRepository = groupRepository;
         }
 
         public async Task ExecuteAsync(Group group)
         {
-            await _groupRepository.AddGroupAsync(group);
-
+            await _groupRepository.UpdateGroupsTable(group);
         }
     }
 }

@@ -8,6 +8,7 @@ using UniSystem.Plugins.Repositories;
 using UniSystem.UseCases.TableActionsUseCases;
 using UniSystemBlazor.Components.Charts;
 using Radzen;
+using UniSystem.UseCases.GroupsAverageUseCases;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 builder.Services.AddRadzenComponents();
 
+builder.Services.AddScoped<NotificationService>();
 builder.Services.AddScoped<DialogService>();
 builder.Services.AddScoped<GroupsChart>();
 
@@ -36,9 +38,13 @@ builder.Services.AddTransient<IDeleteGroupUseCase, DeleteGroupUseCase>();
 builder.Services.AddTransient<IEditGroupUseCase, EditGroupUseCase>();
 builder.Services.AddTransient<IAddGroupUseCase, AddGroupUseCase>();
 builder.Services.AddTransient<IGroupRepository, GroupRepository>();
+builder.Services.AddTransient<IGetGroupAverageUseCase, GetGroupAverageUseCase>();
+builder.Services.AddTransient<ICalculateGroupAverageUseCase, CalculateGroupAverageUseCase>();
+builder.Services.AddTransient<IUpdateGroupsTableUseCase, UpdateGroupsTableUseCase>();
+builder.Services.AddTransient<IGetAmountOfStudentsUseCase, GetAmountOfStudentsUseCase>();
 
 builder.Services.AddTransient<IGetStudentsUseCase, GetStudentsUseCase>();
-builder.Services.AddTransient<IGetStudentByNameUseCase, GetStudentByNameUseCase>();
+builder.Services.AddTransient<IGetStudentByIdUseCase, GetStudentByIdUseCase>();
 builder.Services.AddTransient<IAddStudentUseCase, AddStudentUseCase>();
 builder.Services.AddTransient<IDeleteStudentUseCase, DeleteStudentUseCase>();
 builder.Services.AddTransient<IEditStudentUseCase, EditStudentUseCase>();

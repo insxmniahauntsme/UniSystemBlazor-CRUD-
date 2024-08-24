@@ -5,7 +5,13 @@
 
 @inject IGetGroupsUseCase GetGroupsUseCase
 @inject IDeleteGroupUseCase DeleteGroupUseCase
+@inject IGetGroupAverageUseCase GetGroupAverageUseCase
+@inject IUpdateGroupsTableUseCase UpdateGroupsTableUseCase
+@inject IGetAmountOfStudentsUseCase GetAmountOfStudentsUseCase
+
 @inject NavigationManager Navigation
+@inject NotificationService NotificationService
+@inject DialogService dialogService
 
 <PageTitle>Groups</PageTitle>
 
@@ -54,7 +60,7 @@ else
                         </button>
                         <button type="button"
                                 class="delete-button"
-                                @onclick="() => DeleteGroup(group)">
+                                @onclick="() => ConfirmDelete(group)">
                             Delete
                         </button>
                     </td>
@@ -74,12 +80,27 @@ else
     {
         try
         {
+            //incapsulate this in one/different class(es)
             groups = await GetGroupsUseCase.ExecuteAsync();
+            var groupList = groups.ToList();
+
+            foreach(var group in groupList)
+            {
+                if (group != null)
+                {
+                    //update amount of students
+                    group.GroupAverage = await GetGroupAverageUseCase.ExecuteAsync(group.GroupName);
+                    group.AmountOfStudents = await GetAmountOfStudentsUseCase.ExecuteAsync(group.GroupName);
+                    await UpdateGroupsTableUseCase.ExecuteAsync(group);
+                }
+            }
+
         }
         catch (Exception ex)
         {
             Console.WriteLine($"Error: {ex.Message}");
         }
+
     }
 
     private void AddGroup()
@@ -92,10 +113,35 @@ else
         Navigation.NavigateTo($"/edit-group/{Id}");
     }
 
+    private async Task ConfirmDelete(UniSystem.Core.Entities.Group group)
+    {
+        bool? result = await dialogService.Confirm("This action will delete the group and may also delete related elements from other tables. Do you want to proceed?", "Delete group?",
+            new ConfirmOptions
+            {
+                Style = "color: #4db9f2;",
+                OkButtonText = "Yes",
+                CancelButtonText = "No",
+
+            });
+
+        if (result == true)
+        {
+            await DeleteGroup(group);
+        }
+    }
+
     private async Task DeleteGroup(UniSystem.Core.Entities.Group group)
     {
-        await DeleteGroupUseCase.ExecuteAsync(group);
-        groups = await GetGroupsUseCase.ExecuteAsync();
+        try
+        {
+            await DeleteGroupUseCase.ExecuteAsync(group);
+            groups = await GetGroupsUseCase.ExecuteAsync();
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Group was successfully deleted", Duration = 4000 });
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = "This group doesn't exist", Duration = 4000 });
+        }
     }
 }
 

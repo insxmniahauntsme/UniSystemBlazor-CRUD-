@@ -6,6 +6,7 @@
 @inject IEditFacultyUseCase EditFacultyUseCase
 @inject IGetFacultyByIdUseCase GetFacultyByIdUseCase
 @inject NavigationManager Navigation
+@inject NotificationService NotificationService
 
 <link rel="stylesheet" href="css/editPage.css?v1.0" />
 
@@ -57,8 +58,16 @@
 
     private async Task Save()
     {
-        await EditFacultyUseCase.ExecuteAsync(faculty);
-        Navigation.NavigateTo("/");
+        try
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Faculty was successfully edited", Duration = 4000 });
+            await EditFacultyUseCase.ExecuteAsync(faculty);
+            Navigation.NavigateTo("/");
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = $"{ex.Message}", Duration = 4000 });
+        }
     }
 
     protected override async Task OnInitializedAsync()

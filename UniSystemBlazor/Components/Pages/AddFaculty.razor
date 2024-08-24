@@ -6,6 +6,7 @@
 
 @inject IAddFacultyUseCase AddFacultyUseCase
 @inject NavigationManager Navigation
+@inject NotificationService NotificationService
 
 <link rel="stylesheet" href="css/addPage.css?v1.0" />
 
@@ -59,7 +60,15 @@
 
     private async Task Save()
     {
-        await AddFacultyUseCase.ExecuteAsync(faculty);
-        Navigation.NavigateTo("/");
+        try
+        {
+            await AddFacultyUseCase.ExecuteAsync(faculty);
+            Navigation.NavigateTo("/");
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Faculty was successfully added", Duration = 4000 });
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = $"{ex.Message}", Duration = 4000 });
+        }
     }
 }

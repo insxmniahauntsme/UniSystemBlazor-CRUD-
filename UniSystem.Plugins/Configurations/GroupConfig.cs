@@ -10,11 +10,15 @@ namespace UniSystem.Plugins.Configurations
             builder.ToTable("Groups", "UniversitySchema");
 
             builder.HasKey(g => g.GroupId);
-            builder.Property(g => g.GroupName).IsRequired();
-            builder.Property(g => g.Faculty).IsRequired();
 
+            builder.Property(g => g.GroupName)
+                   .IsRequired()
+                   .HasMaxLength(100); 
 
-
+            builder.Property(g => g.Faculty)
+                   .IsRequired();
         }
     }
+
+
 }

@@ -6,6 +6,7 @@
 @inject IEditGroupUseCase EditGroupUseCase
 @inject IGetGroupByIdUseCase GetGroupByIdUseCase
 @inject NavigationManager Navigation
+@inject NotificationService NotificationService
 
 <link rel="stylesheet" href="css/editPage.css?v1.0" />
 
@@ -33,22 +34,6 @@
         </InputText>
     </div>
 
-    <div class="form-group" style="padding-bottom: 10px">
-        <label for="AoF">Amount of students</label>
-        <InputNumber id="Aof"
-                   @bind-Value='group.AmountOfStudents'
-                   class="form-control">
-        </InputNumber>
-    </div>
-
-    <div class="form-group">
-        <label for="AvgScore">Average score</label>
-        <InputNumber id="AvgScore"
-                     @bind-Value='group.GroupAverage'
-                     class="form-control">
-        </InputNumber>
-    </div>
-
     <br />
 
     <div style="align-items: center">
@@ -65,8 +50,16 @@
 
     private async Task Save()
     {
-        await EditGroupUseCase.ExecuteAsync(group);
-        Navigation.NavigateTo("/groups");
+        try
+        {
+            await EditGroupUseCase.ExecuteAsync(group);
+            Navigation.NavigateTo("/groups");
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Group was successfully edited", Duration = 4000 });
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = $"{ex.Message}", Duration = 4000 });
+        }
     }
 
     protected override async Task OnInitializedAsync()

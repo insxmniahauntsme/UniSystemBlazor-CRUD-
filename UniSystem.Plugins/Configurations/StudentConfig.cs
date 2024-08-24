@@ -10,10 +10,19 @@ namespace UniSystem.Plugins.Configurations
         {
             builder.ToTable("Students", "UniversitySchema");
 
-            builder.HasKey(s => s.RegistrationDate);
-            builder.Property(s => s.Name).IsRequired().HasMaxLength(100);
-            builder.Property(s => s.Surname).IsRequired().HasMaxLength(100);
+            // Primary key
+            builder.HasKey(s => s.StudentId);
 
+            // Properties
+            builder.Property(s => s.Name)
+                   .IsRequired()
+                   .HasMaxLength(100);
+
+            builder.Property(s => s.Surname)
+                   .IsRequired()
+                   .HasMaxLength(100);
+
+           
         }
     }
 }

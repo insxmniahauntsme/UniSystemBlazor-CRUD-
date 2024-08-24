@@ -1,11 +1,12 @@
-﻿@page "/edit-student/{studentName:alpha}"
+﻿@page "/edit-student/{studentId:int}"
 
 @rendermode InteractiveServer
 @attribute [StreamRendering]
 
 @inject IEditStudentUseCase EditStudentUseCase
-@inject IGetStudentByNameUseCase GetStudentByNameUseCase
+@inject IGetStudentByIdUseCase GetStudentByIdUseCase
 @inject NavigationManager Navigation
+@inject NotificationService NotificationService
 
 <link rel="stylesheet" href="css/editPage.css?v1.0" />
 
@@ -59,19 +60,27 @@
 
 @code {
     [Parameter]
-    public string StudentName { get; set; } = null!;
+    public int StudentId { get; set; }
 
     private Student student = null!;
 
     private async Task Save()
     {
-        await EditStudentUseCase.ExecuteAsync(student);
-        Navigation.NavigateTo("/students");
+        try
+        {
+            await EditStudentUseCase.ExecuteAsync(student);
+            Navigation.NavigateTo("/students");
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Student was successfully edited", Duration = 4000 });
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = $"{ex.Message}", Duration = 4000 });
+        }
     }
 
     protected override async Task OnInitializedAsync()
     {
-        student = await GetStudentByNameUseCase.ExecuteAsync(StudentName);
+        student = await GetStudentByIdUseCase.ExecuteAsync(StudentId);
     }
 
 }

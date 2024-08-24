@@ -4,17 +4,17 @@ using UniSystem.UseCases.Interfaces;
 
 namespace UniSystem.UseCases.GetUseCases
 {
-    public class GetStudentsUseCase : IGetStudentsUseCase
+    public class GetStudentByIdUseCase : IGetStudentByIdUseCase
     {
         private readonly IStudentRepository _studentRepository;
 
-        public GetStudentsUseCase(IStudentRepository studentRepository)
+        public GetStudentByIdUseCase(IStudentRepository studentRepository)
         {
             _studentRepository = studentRepository;
         }
-        public async Task<IEnumerable<Student>> ExecuteAsync()
+        public async Task<Student> ExecuteAsync(int id)
         {
-            return await _studentRepository.GetStudentsAsync();
+            return await _studentRepository.GetStudentByIdAsync(id);
         }
 
     }

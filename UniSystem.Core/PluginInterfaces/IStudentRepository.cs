@@ -8,6 +8,6 @@ namespace UniSystem.Core.PluginInterfaces
         Task DeleteStudentAsync(Student student);
         Task EditStudentAsync(Student student);
         Task<IEnumerable<Student>> GetStudentsAsync();
-        Task<Student> GetStudentByNameAsync(string name);
+        Task<Student> GetStudentByIdAsync(int id);
     }
 }

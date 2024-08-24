@@ -55,5 +55,13 @@ namespace UniSystem.Plugins.Repositories
         {
             return await Task.FromResult(_context.Groups);
         }
+
+        public Task UpdateGroupsTable(Group group)
+        {
+            _context.Groups.Update(group);
+            _context.SaveChanges();
+
+            return Task.CompletedTask;
+        }
     }
 }

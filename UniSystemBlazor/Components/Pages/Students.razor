@@ -6,6 +6,8 @@
 @inject IGetStudentsUseCase GetStudentsUseCase
 @inject NavigationManager Navigation
 @inject IDeleteStudentUseCase DeleteStudentUseCase
+@inject NotificationService NotificationService
+@inject DialogService dialogService
 
 <PageTitle>Students</PageTitle>
 
@@ -50,13 +52,13 @@ else
                         <button 
                             type="button" 
                             class="edit-button"
-                            @onclick="() => EditStudent(student.Name)">
+                            @onclick="() => EditStudent(student.StudentId)">
                             Edit
                         </button>
                         <button
                             type="button"
                             class="delete-button"
-                            @onclick="() => DeleteStudent(student)">
+                            @onclick="() => ConfirmDelete(student)">
                             Delete
                         </button>
                     </td>
@@ -88,14 +90,32 @@ else
         Navigation.NavigateTo("/add-student");
     }
 
-    private void EditStudent(string name)
+    private void EditStudent(int id)
     {
-        Navigation.NavigateTo($"/edit-student/{name}");
+        Navigation.NavigateTo($"/edit-student/{id}");
+    }
+
+    private async Task ConfirmDelete(Student student)
+    {
+        bool? result = await dialogService.Confirm("This action will delete the student and may also delete related elements from other tables. Do you want to proceed?", "Delete student?", new ConfirmOptions { OkButtonText = "Yes", CancelButtonText = "No" });
+
+        if (result == true)
+        {
+            await DeleteStudent(student);
+        }
     }
 
     private async Task DeleteStudent(Student student)
     {
-        await DeleteStudentUseCase.ExecuteAsync(student);
-        students = await GetStudentsUseCase.ExecuteAsync();
+        try
+        {
+            await DeleteStudentUseCase.ExecuteAsync(student);
+            students = await GetStudentsUseCase.ExecuteAsync();
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Student was successfully deleted", Duration = 4000 });
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = "This student doesn't exist", Duration = 4000 });
+        }
     }
 }

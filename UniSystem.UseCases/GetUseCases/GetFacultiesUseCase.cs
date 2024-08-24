@@ -1,5 +1,4 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using UniSystem.Core.Entities;
+﻿using UniSystem.Core.Entities;
 using UniSystem.Core.PluginInterfaces;
 using UniSystem.UseCases.Interfaces;
 

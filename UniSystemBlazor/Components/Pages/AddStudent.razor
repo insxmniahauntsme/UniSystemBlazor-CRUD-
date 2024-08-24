@@ -6,6 +6,7 @@
 
 @inject IAddStudentUseCase AddStudentUseCase
 @inject NavigationManager Navigation
+@inject NotificationService NotificationService
 
 <link rel="stylesheet" href="css/addPage.css?v1.0" />
 
@@ -64,11 +65,21 @@
 
 @code {
     [SupplyParameterFromForm]
-    private Student student {get; set;} = new Student(); 
+    private Student student {get; set;} = new Student();
 
     private async Task Save()
     {
-        await AddStudentUseCase.ExecuteAsync(student);
-        Navigation.NavigateTo("/students");
+        try
+        {
+            await AddStudentUseCase.ExecuteAsync(student);
+            Navigation.NavigateTo("/students");
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Student was successfully added", Duration = 4000 });
+        }
+        catch (Exception ex)
+        {
+            NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Info, Summary = "Warning", Detail = "Group with this name doesn't exist", Duration = 4000 });
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+
     }
 }
