@@ -46,6 +46,11 @@ namespace UniSystem.Plugins.Repositories
             return Task.CompletedTask;
         }
 
+        public async Task<IEnumerable<Student>> GetStudentsByPropertyAsync(string property)
+        {
+            return await Task.FromResult(string.IsNullOrWhiteSpace(property) ? _context.Students : _context.Students.Where(s => s.Name.Contains(property) || s.Surname.Contains(property) || s.GroupName.Contains(property)));
+        }
+
         public async Task<Student> GetStudentByIdAsync(int id)
         {
             return await Task.FromResult(_context.Students.First(s => s.StudentId == id));
@@ -55,5 +60,6 @@ namespace UniSystem.Plugins.Repositories
         {
             return await Task.FromResult(_context.Students);
         }
+
     }
 }

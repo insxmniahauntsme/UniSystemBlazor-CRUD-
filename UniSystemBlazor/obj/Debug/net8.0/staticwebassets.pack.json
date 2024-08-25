@@ -25,12 +25,20 @@
       "PackagePath": "staticwebassets\\css\\editPage.css"
     },
     {
+      "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\searchbar.css",
+      "PackagePath": "staticwebassets\\css\\searchbar.css"
+    },
+    {
       "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePage.css",
       "PackagePath": "staticwebassets\\css\\tablePage.css"
     },
     {
       "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\search-icon.png",
+      "PackagePath": "staticwebassets\\search-icon.png"
     },
     {
       "Id": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\university.png",

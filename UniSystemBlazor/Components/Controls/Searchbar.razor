@@ -1,0 +1,33 @@
+﻿@typeparam TEntity
+
+<link rel="stylesheet" href="css/searchbar.css" />
+
+<div class="searchbar">
+    <input type="text" @bind="Searchproperty" @onkeyup="HandleKeyUp" class="input-bar" placeholder="Enter a word to search"/>
+    <button @onclick="OnSearchClicked" class="search-button">
+        <img src="search-icon.png" class="button-image" />
+    </button>
+</div>
+
+@code {
+    [Parameter] public string Searchproperty { get; set; } = string.Empty;
+    [Parameter] public Func<string, Task<IEnumerable<TEntity>>> SearchFunction { get; set; } = default!;
+    [Parameter] public EventCallback<IEnumerable<TEntity>> OnSearchResults { get; set; }
+
+    private async Task OnSearchClicked()
+    {
+        if (SearchFunction != null)
+        {
+            var results = await SearchFunction(Searchproperty);
+            await OnSearchResults.InvokeAsync(results);
+        }
+    }
+
+    private async Task HandleKeyUp(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            await OnSearchClicked();
+        }
+    }
+}

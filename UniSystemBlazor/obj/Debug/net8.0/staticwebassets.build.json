@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aAVZFhI+vh+AkGsPdcK+EWCx2MboSUuJ7TZJBaDSgnk=",
+  "Hash": "DXDWUBAKg3CxawOvyq+HEZjvy4G+wWYEfdDjMPUM4cY=",
   "Source": "UniSystemBlazor",
   "BasePath": "_content/UniSystemBlazor",
   "Mode": "Default",
@@ -967,6 +967,25 @@
       "OriginalItemSpec": "wwwroot\\css\\editPage.css"
     },
     {
+      "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\searchbar.css",
+      "SourceId": "UniSystemBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\",
+      "BasePath": "_content/UniSystemBlazor",
+      "RelativePath": "css/searchbar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\searchbar.css"
+    },
+    {
       "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\css\\tablePage.css",
       "SourceId": "UniSystemBlazor",
       "SourceType": "Discovered",
@@ -1003,6 +1022,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\search-icon.png",
+      "SourceId": "UniSystemBlazor",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\",
+      "BasePath": "_content/UniSystemBlazor",
+      "RelativePath": "search-icon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\search-icon.png"
     },
     {
       "Identity": "E:\\csharp\\blazorProj\\UniSystem\\UniSystemBlazor\\wwwroot\\university.png",

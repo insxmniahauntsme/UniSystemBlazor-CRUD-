@@ -46,6 +46,11 @@ namespace UniSystem.Plugins.Repositories
             return Task.CompletedTask;
         }
 
+        public async Task<IEnumerable<Group>> GetGroupsByPropertyAsync(string property)
+        {
+            return await Task.FromResult(string.IsNullOrWhiteSpace(property) ? _context.Groups : _context.Groups.Where(g => g.GroupName.Contains(property) || g.Faculty.Contains(property)));
+        }
+
         public async Task<Group> GetGroupByIdAsync(int Id)
         {
             return await Task.FromResult(_context.Groups.First(g => g.GroupId == Id));

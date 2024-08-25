@@ -3,7 +3,7 @@
     public class Student
     {
         public int StudentId { get; set; }
-        public DateOnly RegistrationDate { get; set; }
+        public DateOnly RegistrationDate { get; set; } = DateOnly.FromDateTime(DateTime.Now);
         public string Surname { get; set; } = string.Empty;
         public string Name { get; set; } = string.Empty;
         public string GroupName { get; set; } = string.Empty;

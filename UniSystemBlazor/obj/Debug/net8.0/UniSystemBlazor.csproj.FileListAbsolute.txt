@@ -1,3 +1,10 @@
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.csproj.AssemblyReference.cache
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.GeneratedMSBuildEditorConfig.editorconfig
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.AssemblyInfoInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.AssemblyInfo.cs
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.csproj.CoreCompileInputs.cache
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.MvcApplicationPartsAssemblyInfo.cache
+E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.sourcelink.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\appsettings.Development.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\appsettings.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystemBlazor.staticwebassets.runtime.json
@@ -52,13 +59,6 @@ E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystem.UseCas
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystem.Core.pdb
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystem.Plugins.pdb
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\bin\Debug\net8.0\UniSystem.UseCases.pdb
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.csproj.AssemblyReference.cache
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.GeneratedMSBuildEditorConfig.editorconfig
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.AssemblyInfoInputs.cache
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.AssemblyInfo.cs
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.csproj.CoreCompileInputs.cache
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.MvcApplicationPartsAssemblyInfo.cache
-E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\UniSystemBlazor.sourcelink.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\staticwebassets.build.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\staticwebassets.development.json
 E:\csharp\blazorProj\UniSystem\UniSystemBlazor\obj\Debug\net8.0\staticwebassets\msbuild.UniSystemBlazor.Microsoft.AspNetCore.StaticWebAssets.props

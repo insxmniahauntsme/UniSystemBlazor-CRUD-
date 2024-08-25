@@ -4,8 +4,10 @@
 @attribute [StreamRendering]
 
 @inject IGetStudentsUseCase GetStudentsUseCase
-@inject NavigationManager Navigation
 @inject IDeleteStudentUseCase DeleteStudentUseCase
+@inject IGetStudentsByPropertyUseCase GetStudentsByNameUseCase
+
+@inject NavigationManager Navigation
 @inject NotificationService NotificationService
 @inject DialogService dialogService
 
@@ -15,6 +17,7 @@
 
 <div class="page-header">
     <div class="table-topic">Students</div>
+    <Searchbar TEntity="Student" SearchFunction="GetStudentsByNameAsync" OnSearchResults="OnSearchResults" />
     <button class="add-button" @onclick="AddStudent">
         +
     </button>
@@ -97,7 +100,12 @@ else
 
     private async Task ConfirmDelete(Student student)
     {
-        bool? result = await dialogService.Confirm("This action will delete the student and may also delete related elements from other tables. Do you want to proceed?", "Delete student?", new ConfirmOptions { OkButtonText = "Yes", CancelButtonText = "No" });
+        bool? result = await dialogService.Confirm("This action will delete the student and may also delete related elements from other tables. Do you want to proceed?", "Delete student?",
+            new ConfirmOptions 
+            { 
+                OkButtonText = "Yes",
+                CancelButtonText = "No"
+            });
 
         if (result == true)
         {
@@ -113,9 +121,19 @@ else
             students = await GetStudentsUseCase.ExecuteAsync();
             NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Student was successfully deleted", Duration = 4000 });
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = "This student doesn't exist", Duration = 4000 });
         }
+    }
+
+    private async Task<IEnumerable<Student>> GetStudentsByNameAsync(string name)
+    {
+        return await GetStudentsByNameUseCase.ExecuteAsync(name);
+    }
+
+    private void OnSearchResults(IEnumerable<Student> searchResults)
+    {
+        students = searchResults;
     }
 }

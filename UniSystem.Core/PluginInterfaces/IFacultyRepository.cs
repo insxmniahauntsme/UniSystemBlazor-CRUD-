@@ -7,7 +7,8 @@ namespace UniSystem.Core.PluginInterfaces
         Task AddFacultyAsync(Faculty faculty);
         Task DeleteFacultyAsync(Faculty faculty);
         Task EditFacultyAsync(Faculty faculty);
-        Task<Faculty> GetFacultyByIdAsync(int id);
         Task<IEnumerable<Faculty>> GetFacultiesAsync();
+        Task<IEnumerable<Faculty>> GetFacultiesByPropertyAsync(string name);
+        Task<Faculty> GetFacultyByIdAsync(int id);
     }
 }

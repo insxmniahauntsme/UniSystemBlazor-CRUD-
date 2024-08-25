@@ -2,11 +2,13 @@
 @rendermode InteractiveServer
 @using Radzen.Blazor
 @using Radzen
-@using UniSystemBlazor.Components.Charts
+@using UniSystemBlazor.Components.Controls
 
-@inject DialogService dialogService
 @inject IGetFacultiesUseCase GetFacultiesUseCase
 @inject IDeleteFacultyUseCase DeleteFacultyUseCase
+@inject IGetFacultiesByPropertyUseCase GetFacultiesByNameUseCase
+
+@inject DialogService dialogService
 @inject NavigationManager Navigation
 @inject NotificationService NotificationService
 
@@ -16,6 +18,7 @@
 
 <div class="page-header">
     <div class="table-topic">Faculties</div>
+    <Searchbar TEntity="Faculty" SearchFunction="GetFacultiesByNameAsync" OnSearchResults="OnSearchResults"></Searchbar>
     <button class="add-button" @onclick="AddFaculty">
         +
     </button>
@@ -109,7 +112,12 @@ else
 
     private async Task ConfirmDelete(Faculty faculty)
     {
-        bool? result = await dialogService.Confirm("This action will delete the faculty and may also delete related elements from other tables. Do you want to proceed?", "Delete faculty?", new ConfirmOptions { OkButtonText = "Yes", CancelButtonText = "No" });
+        bool? result = await dialogService.Confirm("This action will delete the faculty and may also delete related elements from other tables. Do you want to proceed?", "Delete faculty?",
+            new ConfirmOptions 
+            { 
+                OkButtonText = "Yes", 
+                CancelButtonText = "No" 
+            });
 
         if (result == true)
         {
@@ -125,9 +133,19 @@ else
             faculties = await GetFacultiesUseCase.ExecuteAsync();
             NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Faculty was successfully deleted", Duration = 4000 });
         }   
-        catch(Exception ex)
+        catch (Exception)
         {
             NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = "This faculty doesn't exist", Duration = 4000 });
         }
+    }
+
+    private async Task<IEnumerable<Faculty>> GetFacultiesByNameAsync(string name)
+    {
+        return await GetFacultiesByNameUseCase.ExecuteAsync(name);
+    }
+
+    private void OnSearchResults(IEnumerable<Faculty> searchResults)
+    {
+        faculties = searchResults;
     }
 }

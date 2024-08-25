@@ -8,6 +8,7 @@
 @inject IGetGroupAverageUseCase GetGroupAverageUseCase
 @inject IUpdateGroupsTableUseCase UpdateGroupsTableUseCase
 @inject IGetAmountOfStudentsUseCase GetAmountOfStudentsUseCase
+@inject IGetGroupsByPropertyUseCase GetGroupsByNameUseCase
 
 @inject NavigationManager Navigation
 @inject NotificationService NotificationService
@@ -19,6 +20,7 @@
 
 <div class="page-header">
     <div class="table-topic">Groups</div>
+    <Searchbar TEntity="UniSystem.Core.Entities.Group" SearchFunction="GetGroupsByNameAsync" OnSearchResults="OnSearchResults"></Searchbar>
     <button class="add-button" @onclick="AddGroup">
         +
     </button>
@@ -118,7 +120,6 @@ else
         bool? result = await dialogService.Confirm("This action will delete the group and may also delete related elements from other tables. Do you want to proceed?", "Delete group?",
             new ConfirmOptions
             {
-                Style = "color: #4db9f2;",
                 OkButtonText = "Yes",
                 CancelButtonText = "No",
 
@@ -138,10 +139,20 @@ else
             groups = await GetGroupsUseCase.ExecuteAsync();
             NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Success, Summary = "Success", Detail = "Group was successfully deleted", Duration = 4000 });
         }
-        catch (Exception ex)
+        catch (Exception)
         {
             NotificationService.Notify(new NotificationMessage { Severity = NotificationSeverity.Error, Summary = "Error", Detail = "This group doesn't exist", Duration = 4000 });
         }
+    }
+
+    private async Task<IEnumerable<UniSystem.Core.Entities.Group>> GetGroupsByNameAsync(string name)
+    {
+        return await GetGroupsByNameUseCase.ExecuteAsync(name);
+    }
+
+    private void OnSearchResults(IEnumerable<UniSystem.Core.Entities.Group> searchResults)
+    {
+        groups = searchResults;
     }
 }
 

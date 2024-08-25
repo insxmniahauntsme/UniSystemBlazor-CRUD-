@@ -33,7 +33,6 @@ namespace UniSystem.Plugins.Repositories
             }
             
             return Task.CompletedTask;                      
-
         }
 
         public Task EditFacultyAsync(Faculty faculty)
@@ -46,10 +45,16 @@ namespace UniSystem.Plugins.Repositories
 
             return Task.CompletedTask;
         }
+        public async Task<IEnumerable<Faculty>> GetFacultiesByPropertyAsync(string property)
+        {
+            return await Task.FromResult(string.IsNullOrWhiteSpace(property) ? _context.Faculties : _context.Faculties.Where(f => f.FacultyName.Contains(property) || f.Department.Contains(property)));
+        }
+
         public async Task<Faculty> GetFacultyByIdAsync(int id)
         {
             return await Task.FromResult(_context.Faculties.First(f => f.FacultyId == id));
         }
+
         public async Task<IEnumerable<Faculty>> GetFacultiesAsync()
         {
             return await Task.FromResult(_context.Faculties);
